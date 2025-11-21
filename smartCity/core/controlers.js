@@ -1,15 +1,14 @@
-// singleton pattern + facade pattern + proxy pattern
+// singleton pattern 
 const LightingFactory = require("./factories/LightingFactory");
 const AuthProxy = require("./proxy/AuthProxy");
 
 class Controller {
     constructor(user) {
-        if (Controller.instance) return Controller.instance; // Singleton
+        if (Controller.instance) return Controller.instance; 
 
         this.user = user;
         this.auth = new AuthProxy(user);
 
-        // Facade – subsistemalarga umumiy kirish
         this.lighting = new LightingFactory().createLightingSystem();
 
         Controller.instance = this;
