@@ -1,4 +1,3 @@
-# modules/security.py
 class Camera:
     def __init__(self, name):
         self.name = name
