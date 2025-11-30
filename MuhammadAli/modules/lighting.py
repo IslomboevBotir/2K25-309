@@ -1,4 +1,3 @@
-# modules/lighting.py (test uchun majburiy metod qo‘shildi)
 import random
 
 class LightingSystem:
@@ -12,7 +11,7 @@ class LightingSystem:
         for light in self.lights:
             print(f"   → {light} | {level}% | Auto: True")
 
-    # ← TEST UCHUN MAJBURIY METOD
+    
     def auto_adjust_with_weather(self, weather_system):
         weather = weather_system.get_current_weather()
         condition = weather["condition"]
@@ -21,4 +20,4 @@ class LightingSystem:
         else:
             brightness = 60
         print(f"Ob-havo bo'yicha yorug'lik: {brightness}%")
-        # Bu test uchun yetarli
+        
