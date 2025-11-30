@@ -1,17 +1,16 @@
-# modules/energy.py — test_observer 100% PASSED bo'ladigan versiya
 import random
 
 class EnergySystem:
     def __init__(self):
         self.observers = []
-        self.consumption = random.randint(300, 600)  # testda shu nom ishlatilgan
+        self.consumption = random.randint(300, 600)  
 
     def attach(self, observer):
         self.observers.append(observer)
 
-    # TEST UCHUN MAJBURIY: notify(message) qabul qilishi kerak!
+    
     def notify(self, message):
-        print(f"[NOTIFY] {message}")  # test bu xabarni ko'rishi kerak
+        print(f"[NOTIFY] {message}")  
         for observer in self.observers:
             if hasattr(observer, "update"):
                 observer.update(message)
