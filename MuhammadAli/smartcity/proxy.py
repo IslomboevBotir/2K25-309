@@ -1,4 +1,3 @@
-# smartcity/proxy.py
 class SecurityProxy:
     def __init__(self, real_system):
         self.real_system = real_system
