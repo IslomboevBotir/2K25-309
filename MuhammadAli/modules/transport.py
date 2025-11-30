@@ -1,4 +1,3 @@
-# modules/transport.py
 import random
 
 class TransportSystem:
