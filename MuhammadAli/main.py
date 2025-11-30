@@ -1,6 +1,5 @@
-# main.py
 import os
-os.environ["SMARTCITY_SILENT"] = "1"  # Loglarni o'chirish uchun
+os.environ["SMARTCITY_SILENT"] = "1"
 
 from smartcity.controller import CityController
 from smartcity.command_processor import CommandProcessor
@@ -19,18 +18,14 @@ def main():
     while True:
         try:
             cmd = input("\n>>> ").strip()
-
-            # Agar faqat "camera" yozsa — parol so‘raymiz
             if cmd.lower() == "camera":
                 pwd = input("Xavfsizlik parolini kiriting: ").strip()
                 if pwd == "smart2025":
-                    controller.access_security_camera(pwd)  # To‘g‘ridan-to‘g‘ri chaqiramiz
+                    controller.access_security_camera(pwd)
                     continue
                 else:
                     print("PAROL XATO! Kirish rad etildi")
                     continue
-
-            # Boshqa buyruqlar processor orqali
             if cmd.lower() in ["exit", "chiqish", "quit", "0"]:
                 print("\nSmartCity tizimi o‘chirildi. Xayr!")
                 break
