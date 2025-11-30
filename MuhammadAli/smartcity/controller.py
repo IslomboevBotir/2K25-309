@@ -1,4 +1,3 @@
-# smartcity/controller.py
 from modules.transport import TransportSystem
 from modules.lighting import LightingSystem
 from modules.security import AdvancedSecuritySystem
