@@ -1,4 +1,3 @@
-# modules/weather.py (to'liq va testdan o'tadigan versiya)
 import random
 
 class WeatherSystem:
