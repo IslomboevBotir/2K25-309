@@ -1,4 +1,3 @@
-# modules/wifi.py
 import random
 
 class WiFiManager:
