@@ -1,0 +1,31 @@
+# Byte-code files
+*.pyc
+__pycache__/
+*.pyd
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Editors/OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Environment variables
+.env
