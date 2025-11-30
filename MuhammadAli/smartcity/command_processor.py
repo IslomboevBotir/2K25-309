@@ -1,4 +1,3 @@
-# smartcity/command_processor.py
 class CommandProcessor:
     @staticmethod
     def process(cmd: str, ctrl):
