@@ -1,5 +1,3 @@
-# modules/lighting/manager.py
-
 from core.adapter.weather_adapter import WeatherAdapter, ExternalWeatherAPI
 
 

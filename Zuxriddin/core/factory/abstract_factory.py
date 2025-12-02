@@ -1,10 +1,6 @@
-# core/controller.py
-
 from modules.lighting.manager import LightingManager
 from modules.transport.manager import TransportManager
 
-
-# ... import other managers
 
 class SmartCityController:
     """

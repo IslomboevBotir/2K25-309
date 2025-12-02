@@ -1,5 +1,3 @@
-# core/adapters/weather_adapter.py
-
 # The third-party service with an incompatible interface (the Adaptee)
 class ExternalWeatherAPI:
     def get_meteorological_data_json(self):
