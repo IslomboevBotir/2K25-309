@@ -3,17 +3,23 @@ from .vehicles import Bus, Tram
 
 class TransportSystem(ABC):
     @abstractmethod
-    def start_service(self): pass
+    def start_service(self):
+        pass
     @abstractmethod
-    def stop_service(self): pass
+    def stop_service(self):
+        pass
 
 class BusSystem(TransportSystem):
-    def start_service(self): Bus().start()
-    def stop_service(self): Bus().stop()
+    def start_service(self):
+        Bus().start()
+    def stop_service(self):
+        Bus().stop()
 
 class TramSystem(TransportSystem):
-    def start_service(self): Tram().start()
-    def stop_service(self): Tram().stop()
+    def start_service(self):
+        Tram().start()
+    def stop_service(self):
+        Tram().stop()
 
 class TransportSystemFactory:
     """Factory Method: Delegates vehicle creation to subclasses."""

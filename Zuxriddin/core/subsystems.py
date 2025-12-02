@@ -3,9 +3,11 @@ from abc import ABC, abstractmethod
 # Bridge: Implementation interface
 class LightImplementation(ABC):
     @abstractmethod
-    def turn_on(self): pass
+    def turn_on(self):
+        pass
     @abstractmethod
-    def turn_off(self): pass
+    def turn_off(self):
+        pass
 
 # Bridge: Abstraction
 class LightingSystem(ABC):
@@ -13,8 +15,8 @@ class LightingSystem(ABC):
         self.impl = impl
 
     @abstractmethod
-    def turn_on(self): pass
+    def turn_on(self):
+        pass
     @abstractmethod
-    def turn_off(self): pass
-
-# Similarly for other subsystems if needed
+    def turn_off(self):
+        pass
