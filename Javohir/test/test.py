@@ -28,7 +28,6 @@ class TestTask(unittest.TestCase):
         self.assertEqual(task_done.status, "completed")
 
     def test_complete_task(self):
-        """complete_task() metodi statusni to'g'ri yangilashini tekshiradi."""
 
         new_status = self.task.complete_task()
 
@@ -36,7 +35,6 @@ class TestTask(unittest.TestCase):
         self.assertEqual(new_status, "completed")
 
     def test_string_representation(self):
-        """__str__ metodi to'g'ri formatdagi string qaytarishini tekshiradi."""
         expected_str = "Task 1: Dasturni yakunlash (pending)"
         self.assertEqual(str(self.task), expected_str)
 
