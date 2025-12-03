@@ -1,9 +1,6 @@
 from logger import Logger
 
 class SecurityProxy:
-    """
-    Proxy — xavfsizlik moduli uchun parol orqali kirish
-    """
     def __init__(self, system, password="nigga"):
         self.system = system
         self.passwd = password
