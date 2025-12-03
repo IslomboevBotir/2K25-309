@@ -1,13 +1,10 @@
-from logger import Logger
-
 class TransportSystem:
-    """
-    Ommaviy transportni boshqarish
-    """
     def __init__(self):
-        self.bus_count = 0
-        self.log = Logger.get_instance()
+        self.buses = 50
+
+    def show_routes(self):
+        print("Transport marshrutlari ko‘rsatilmoqda: 1A, 2B, 77, 88")
 
     def add_bus(self):
-        self.bus_count += 1
-        self.log.log(f"Yangi avtobus qo‘shildi. Jami: {self.bus_count} ta")
+        self.buses += 1
+        print(f"Yangi avtobus qo‘shildi! Jami: {self.buses}")
