@@ -1,27 +1,27 @@
-from factory import ModuleFactory
+from modules.lighting import LightingSystem
+from modules.transport import TransportSystem
+from modules.security import SecuritySystem
+from modules.energy import EnergySystem
 
 class SmartCityBuilder:
-    """
-    Builder — SmartCity tizimini qadam-qadam yig‘adi
-    """
     def __init__(self):
-        self.city = {}
+        self.components = {}
 
     def add_lighting(self):
-        self.city["lighting"] = ModuleFactory.create("lighting")
+        self.components["lighting"] = LightingSystem()
         return self
 
     def add_transport(self):
-        self.city["transport"] = ModuleFactory.create("transport")
+        self.components["transport"] = TransportSystem()
         return self
 
     def add_security(self):
-        self.city["security"] = ModuleFactory.create("security")
+        self.components["security"] = SecuritySystem()
         return self
 
     def add_energy(self):
-        self.city["energy"] = ModuleFactory.create("energy")
+        self.components["energy"] = EnergySystem()
         return self
 
     def build(self):
-        return self.city
+        return self.components
