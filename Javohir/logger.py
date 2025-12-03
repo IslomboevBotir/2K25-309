@@ -1,18 +1,17 @@
 class Logger:
-    __instance = None
+    _instance = None
 
     def __init__(self):
-        if Logger.__instance:
-            raise Exception("Logger — bu Singleton (bitta nusxa bo‘lishi kerak)")
+        if Logger._instance is not None:
+            raise Exception("Bu klass Singleton!")
+        self.logs = []
 
     @staticmethod
     def get_instance():
-        """
-        Singleton — tizimda faqat bitta logger ishlaydi
-        """
-        if Logger.__instance is None:
-            Logger.__instance = Logger()
-        return Logger.__instance
+        if Logger._instance is None:
+            Logger._instance = Logger()
+        return Logger._instance
 
-    def log(self, text):
-        print(f"[LOG] {text}")
+    def log(self, message):
+        self.logs.append(message)
+        print(f"[LOG] {message}")
