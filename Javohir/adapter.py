@@ -1,17 +1,13 @@
 class ExternalWeatherAPI:
-    """
-    Tashqi ob-havo servisi (oddiy ko‘rinish)
-    """
     def temperature(self):
-        return 14
-
+        return 16  # misol uchun
 
 class WeatherAdapter:
-    """
-    Adapter — tashqi API natijasini bizga qulay formatga moslaydi
-    """
-    def __init__(self, api: ExternalWeatherAPI):
-        self.api = api
+    def __init__(self, api=None):
+        self.api = api or ExternalWeatherAPI()
+
+    def get_temperature(self):
+        return self.api.temperature()
 
     def city_temp(self):
         return f"Shahardagi harorat: {self.api.temperature()}°C"
