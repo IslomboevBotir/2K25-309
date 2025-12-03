@@ -2,15 +2,19 @@
     def __init__(self, vehicle_id: int, name: str):
         self.id = vehicle_id
         self.name = name
+        self.status_v = "unknown"
 
     def run(self):
         print(f"🚗 Vehicle {self.id} ({self.name}) → Running 🟢")
+        self.status_v = "running"
 
     def stop(self):
         print(f"🚗 Vehicle {self.id} ({self.name}) → Stopped ❌")
+        self.status_v = "stopped"
 
     def status(self):
         print(f"🚗 Vehicle {self.id} ({self.name}) → ready")
+        return self.status_v
 
 class Transports:
     def __init__(self, transports_name: str):

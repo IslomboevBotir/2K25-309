@@ -13,4 +13,4 @@ class WeatherAdapter:
 
     def get_weather(self) -> WeatherInfo:
         data = self.provider.fetch()
-        return WeatherInfo(data["temperature"], data["condition"])
+        return WeatherInfo(data["condition"], data["temperature"])

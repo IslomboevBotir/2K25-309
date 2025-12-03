@@ -22,6 +22,7 @@ class BasicLight(Light):
     def status(self):
         state = "ON ✅" if self.is_on else "OFF ❌"
         print(f"💡 Light {self.id} status: {state}")
+        return self.is_on
 
 class LightGroup(Light):
     def __init__(self, group_name: str):
