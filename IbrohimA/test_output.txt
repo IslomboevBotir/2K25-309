@@ -1,0 +1,167 @@
+
+============================================================
+RUNNING SMARTCITY SYSTEM UNIT TESTS
+============================================================
+
+✓ Singleton Pattern: Multiple instances are the same
+✓ Singleton Pattern: ID verification passed
+✓ Factory Pattern: Energy factory creates correct device
+✓ Factory Pattern: Lighting factory creates correct device
+✓ Factory Pattern: Security factory creates correct device
+✓ Factory Pattern: Transport factory creates correct device
+[PROXY] Lighting System initsializatsiya qilinyapti...
+✓ Lighting System initialized
+[PROXY] Buyruq bajarilmoqda: start
+[PROXY] Kirish Rad Qilindi: 'invalid_command' buyruqiga ruhsat yo'q
+✓ Proxy Pattern: Access control working
+[PROXY] Lighting System initsializatsiya qilinyapti...
+✓ Lighting System initialized
+✓ Proxy Pattern: Access counting working
+[PROXY] Lighting System initsializatsiya qilinyapti...
+✓ Lighting System initialized
+✓ Proxy Pattern: Lazy initialization works
+
+============================================================
+🏙️  SMARTCITY KONTROLERI INITSIALIZATSIYA QILINYAPTI
+============================================================
+[PROXY] Transport System initsializatsiya qilinyapti...
+✓ Transport System initialized
+[KONTROLER] ✓ SmartCity Kontroleri muvaffaqiyatli initsializatsiya qilindi
+
+[KONTROLER] Qurilma yaratildi: LIGHT-002 - Yoritish Qurilma Fabriki
+[LIGHTING] Added device: LIGHT-002
+✓ Controller Integration: Adding device to subsystem working
+
+============================================================
+🔴 SMARTCITY KONTROLERI O'CHIRILMOQDA
+============================================================
+
+[KONTROLER] Barcha subsistemalar to'xtatilmoqda...
+[LIGHT] LIGHT-002 at Oak Ave: OFF
+[KONTROLER] ✓ Barcha subsistemalar to'xtatildi
+
+[PROXY] Transport System o'chirilmoqda...
+✗ Transport System shut down
+[KONTROLER] ✓ SmartCity Kontroleri o'chirildi
+
+
+============================================================
+🏙️  SMARTCITY KONTROLERI INITSIALIZATSIYA QILINYAPTI
+============================================================
+[PROXY] Transport System initsializatsiya qilinyapti...
+✓ Transport System initialized
+[KONTROLER] ✓ SmartCity Kontroleri muvaffaqiyatli initsializatsiya qilindi
+
+✓ Controller Integration: Initialization working
+
+============================================================
+🔴 SMARTCITY KONTROLERI O'CHIRILMOQDA
+============================================================
+
+[KONTROLER] Barcha subsistemalar to'xtatilmoqda...
+[KONTROLER] ✓ Barcha subsistemalar to'xtatildi
+
+[PROXY] Transport System o'chirilmoqda...
+✗ Transport System shut down
+[KONTROLER] ✓ SmartCity Kontroleri o'chirildi
+
+
+============================================================
+🏙️  SMARTCITY KONTROLERI INITSIALIZATSIYA QILINYAPTI
+============================================================
+[PROXY] Transport System initsializatsiya qilinyapti...
+✓ Transport System initialized
+[KONTROLER] ✓ SmartCity Kontroleri muvaffaqiyatli initsializatsiya qilindi
+
+[KONTROLER] Qurilma yaratildi: LIGHT-001 - Yoritish Qurilma Fabriki
+✓ Controller Integration: Device creation working
+
+============================================================
+🔴 SMARTCITY KONTROLERI O'CHIRILMOQDA
+============================================================
+
+[KONTROLER] Barcha subsistemalar to'xtatilmoqda...
+[KONTROLER] ✓ Barcha subsistemalar to'xtatildi
+
+[PROXY] Transport System o'chirilmoqda...
+✗ Transport System shut down
+[KONTROLER] ✓ SmartCity Kontroleri o'chirildi
+
+
+============================================================
+🏙️  SMARTCITY KONTROLERI INITSIALIZATSIYA QILINYAPTI
+============================================================
+[PROXY] Transport System initsializatsiya qilinyapti...
+✓ Transport System initialized
+[KONTROLER] ✓ SmartCity Kontroleri muvaffaqiyatli initsializatsiya qilindi
+
+[PROXY] Lighting System initsializatsiya qilinyapti...
+✓ Lighting System initialized
+✓ Controller Integration: Getting subsystem status working
+
+============================================================
+🔴 SMARTCITY KONTROLERI O'CHIRILMOQDA
+============================================================
+
+[KONTROLER] Barcha subsistemalar to'xtatilmoqda...
+[KONTROLER] ✓ Barcha subsistemalar to'xtatildi
+
+[PROXY] Transport System o'chirilmoqda...
+✗ Transport System shut down
+[KONTROLER] ✓ SmartCity Kontroleri o'chirildi
+
+
+============================================================
+🏙️  SMARTCITY KONTROLERI INITSIALIZATSIYA QILINYAPTI
+============================================================
+[PROXY] Transport System initsializatsiya qilinyapti...
+✓ Transport System initialized
+[KONTROLER] ✓ SmartCity Kontroleri muvaffaqiyatli initsializatsiya qilindi
+
+[LIGHTING] Added device: LIGHT-TEST
+[LIGHT] LIGHT-TEST at Test Street: ON (Brightness: 100%)
+[PROXY] Lighting System initsializatsiya qilinyapti...
+✓ Lighting System initialized
+[LIGHT] LIGHT-TEST at Test Street: OFF
+✓ Controller Integration: Start/stop subsystem working
+
+============================================================
+🔴 SMARTCITY KONTROLERI O'CHIRILMOQDA
+============================================================
+
+[KONTROLER] Barcha subsistemalar to'xtatilmoqda...
+[LIGHT] LIGHT-TEST at Test Street: OFF
+[KONTROLER] ✓ Barcha subsistemalar to'xtatildi
+
+[PROXY] Transport System o'chirilmoqda...
+✗ Transport System shut down
+[KONTROLER] ✓ SmartCity Kontroleri o'chirildi
+
+[LIGHT] LIGHT-002: Brightness set to 50%
+[LIGHT] LIGHT-002: Brightness set to 100%
+✓ Lighting System: Brightness adjustment working
+[LIGHT] LIGHT-001 at Main Street: ON (Brightness: 100%)
+[LIGHT] LIGHT-001 at Main Street: OFF
+✓ Lighting System: Smart light on/off working
+[CAMERA] CAM-001 at Downtown: RECORDING START
+[CAMERA] CAM-001 at Downtown: RECORDING STOP
+✓ Security System: Camera on/off working
+[TRAFFIC] TRAFFIC-001 at Main Intersection: OPERATIONAL
+[TRAFFIC] TRAFFIC-001: Signal changed to GREEN
+[TRAFFIC] TRAFFIC-001: Signal changed to RED
+[TRAFFIC] TRAFFIC-001 at Main Intersection: STOPPED
+✓ Transport System: Traffic light signals working
+[ENERGY] ENERGY-001 at Zone-1: MONITORING START
+[ENERGY] ENERGY-001: Consumption updated to 45.5 kWh
+[ENERGY] ENERGY-001 at Zone-1: MONITORING STOP
+✓ Energy System: Energy monitoring working
+
+============================================================
+TEST SUMMARY
+============================================================
+Tests run: 26
+Successes: 19
+Failures: 0
+Errors: 7
+============================================================
+
